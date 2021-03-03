@@ -27,12 +27,12 @@ class Paper
         push();
         translate(paper_pos.x, paper_pos.y);
         ellipseMode(RADIUS);
-        strokeWeight(1);
-        stroke(0);
-        fill(255);
+        strokeWeight(0.1);
+        stroke(100);
+        fill(100);
         ellipse(0,0,this.r, this.r);
-        image(this.image,paper_pos.x,paper_pos.y,10,20);
         pop();
         
+        image(this.image,paper_pos.x-40,paper_pos.y-35,70,70);
     }
 }

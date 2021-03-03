@@ -8,7 +8,7 @@ var paper;
 
 function preload()
 {
-	
+	DustBin = loadImage("DustbinGreen.png");
 }
 
 function setup() {
@@ -36,15 +36,15 @@ function draw() {
   rectMode(CENTER);
   ellipseMode(RADIUS);
   
-  background(200);
+  background(100);
   
+  paper.display();
+
   side1.display();
   side2.display();
   side3.display();
-
-  paper.display();
-  //drawSprites();
- 
+  image(DustBin, 1000, 350, 150, 150);
+   
 }
 
 function keyPressed()

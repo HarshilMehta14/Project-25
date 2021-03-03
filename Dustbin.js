@@ -14,8 +14,6 @@ class DUSTBIN
         this.width=width;
         this.height=height;
 
-        this.image = loadImage("DustbinGreen.png");
-
     }
 
     display()
@@ -25,6 +23,5 @@ class DUSTBIN
         fill("red");
         rectMode(CENTER);
         rect(this.x,this.y,this.width,this.height);
-        image(this.image, 1000, 350, 150, 150);
     }
 }
