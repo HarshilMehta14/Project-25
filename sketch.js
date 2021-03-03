@@ -21,9 +21,9 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 495, width, 10, {isStatic:true});
 	World.add(world, ground);
 
-	side1 = new DUSTBIN(980, 448, 15, 100);
-	side2 = new DUSTBIN(1178, 448, 15, 100);
-	side3 = new DUSTBIN(1080, 492, 200, 15);
+	side1 = new DUSTBIN(1030, 448, 15, 100);
+	side2 = new DUSTBIN(1130, 448, 15, 100);
+	side3 = new DUSTBIN(1080, 480, 100, 15);
 	
 	paper = new Paper(200, 100, 20);
 
@@ -51,6 +51,6 @@ function keyPressed()
 {
 	if (keyCode === UP_ARROW)
 	{
-		Matter.Body.applyForce(paper.body,paper.body.position, {x:20, y:-20});
+		Matter.Body.applyForce(paper.body,paper.body.position, {x:19, y:-20});
 	}
 }
